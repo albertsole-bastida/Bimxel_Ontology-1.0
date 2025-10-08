@@ -1,0 +1,873 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.owl-ontologies.com/bimxel#"
+     xml:base="http://www.owl-ontologies.com/bimxel"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.owl-ontologies.com/bimxel#">
+        <owl:imports rdf:resource="https://qudt.org/3.1.5/vocab/quantitykind"/>
+        <owl:imports rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL"/>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:label>comment</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/schema/qudt/hasQuantityKind -->
+
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/schema/qudt/hasQuantityKind">
+        <rdfs:label>has quantity kind</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bimxel#HasProject -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/bimxel#HasProject">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/bimxel#BIMxel"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/bimxel#BIMxelProject"/>
+        <rdfs:label>has project</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bimxel#IsContainedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/bimxel#IsContainedIn">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/bimxel#BIMxel"/>
+        <rdfs:comment xml:lang="en">Is Contained In.</rdfs:comment>
+        <rdfs:label>is contained in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+        <rdfs:label>broader</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/Power -->
+
+
+    <owl:DatatypeProperty rdf:about="http://qudt.org/vocab/quantitykind/Power">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/sosa#Observation"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/time#Interval"/>
+        <rdfs:label>power</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bot#Element -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/bot#Element">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/sosa#Observation"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/time#Interval"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bot#Space -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/bot#Space">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/sosa#Observation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bot#Zone -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/bot#Zone">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/bot#Element"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/sosa#Observation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/sosa#Observation">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/bot#Element"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/bot#Space"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/bot#Zone"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/time#Instant"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/time#Interval"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/time#Instant -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/time#Instant">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/bot#Element"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/sosa#Observation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/time#Interval -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/time#Interval">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/bot#Space"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/bot#Zone"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/sosa#Observation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/AmountOfSubstanceConcentration -->
+
+
+    <owl:Class rdf:about="http://qudt.org/vocab/quantitykind/AmountOfSubstanceConcentration">
+        <rdfs:label>Amount Of Substance Concentration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/Energy -->
+
+
+    <owl:Class rdf:about="http://qudt.org/vocab/quantitykind/Energy">
+        <rdfs:label>Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/MoistureContent -->
+
+
+    <owl:Class rdf:about="http://qudt.org/vocab/quantitykind/MoistureContent">
+        <rdfs:label>Moisture Content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/PersonCount -->
+
+
+    <owl:Class rdf:about="http://qudt.org/vocab/quantitykind/PersonCount">
+        <rdfs:label>Person Count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/RelativeHumidity -->
+
+
+    <owl:Class rdf:about="http://qudt.org/vocab/quantitykind/RelativeHumidity">
+        <rdfs:label>Relative Humidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/Temperature -->
+
+
+    <owl:Class rdf:about="http://qudt.org/vocab/quantitykind/Temperature">
+        <rdfs:label>Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/Volume -->
+
+
+    <owl:Class rdf:about="http://qudt.org/vocab/quantitykind/Volume">
+        <rdfs:label>Volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qudt.org/vocab/quantitykind/VolumetricFlowRate -->
+
+
+    <owl:Class rdf:about="http://qudt.org/vocab/quantitykind/VolumetricFlowRate">
+        <rdfs:label>Volumetric Flow Rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuilding -->
+
+
+    <owl:Class rdf:about="http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuilding">
+        <owl:equivalentClass rdf:resource="http://www.owl-ontologies.com/bimxel#BIMxelBuilding"/>
+        <rdfs:label>Ifc Building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuildingStorey -->
+
+
+    <owl:Class rdf:about="http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuildingStorey">
+        <owl:equivalentClass rdf:resource="http://www.owl-ontologies.com/bimxel#BIMxelLevel"/>
+        <rdfs:label>Ifc Building Storey</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcElement -->
+
+
+    <owl:Class rdf:about="http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcElement">
+        <owl:equivalentClass rdf:resource="http://www.owl-ontologies.com/bimxel#BIMxelElement"/>
+        <rdfs:label>Ifc Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcProject -->
+
+
+    <owl:Class rdf:about="http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcProject">
+        <owl:equivalentClass rdf:resource="http://www.owl-ontologies.com/bimxel#BIMxelProject"/>
+        <rdfs:label>Ifc Project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSite -->
+
+
+    <owl:Class rdf:about="http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSite">
+        <owl:equivalentClass rdf:resource="http://www.owl-ontologies.com/bimxel#BIMxelSite"/>
+        <rdfs:label>Ifc Site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSpace -->
+
+
+    <owl:Class rdf:about="http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSpace">
+        <owl:equivalentClass rdf:resource="http://www.owl-ontologies.com/bimxel#BIMxelSpace"/>
+        <rdfs:label>Ifc Space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bimxel#BIMxel -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/bimxel#BIMxel">
+        <rdfs:label>B I Mxel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bimxel#BIMxelBuilding -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/bimxel#BIMxelBuilding">
+        <rdfs:label>B I Mxel Building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bimxel#BIMxelElement -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/bimxel#BIMxelElement">
+        <rdfs:label>B I Mxel Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bimxel#BIMxelLevel -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/bimxel#BIMxelLevel">
+        <rdfs:label>B I Mxel Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bimxel#BIMxelProject -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/bimxel#BIMxelProject">
+        <rdfs:label>B I Mxel Project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bimxel#BIMxelSite -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/bimxel#BIMxelSite">
+        <rdfs:label>B I Mxel Site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bimxel#BIMxelSpace -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/bimxel#BIMxelSpace">
+        <rdfs:label>B I Mxel Space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bot#Element -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/bot#Element"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bot#Space -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/bot#Space"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bot#Zone -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/bot#Zone"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/geo#Feature -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/geo#Feature">
+        <rdfs:label>Feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/quantityKind#AmountOfSubstanceConcentration -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/quantityKind#AmountOfSubstanceConcentration">
+        <rdfs:label>Amount Of Substance Concentration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/quantityKind#Density -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/quantityKind#Density">
+        <rdfs:label>Density</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/quantityKind#PersonCount -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/quantityKind#PersonCount">
+        <rdfs:label>Person Count</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/quantityKind#VolumetricFlowRate -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/quantityKind#VolumetricFlowRate">
+        <rdfs:label>Volumetric Flow Rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/sosa#Actuation -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/sosa#Actuation">
+        <rdfs:label>Actuation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/sosa#FeatureOfInterest -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/sosa#FeatureOfInterest">
+        <rdfs:label>Feature Of Interest</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/sosa#Observation -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/sosa#Observation"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/sosa#Procedure -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/sosa#Procedure">
+        <rdfs:label>Procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/time#Instant -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/time#Instant"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/time#Interval -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/time#Interval"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#AnonymizePeople -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#AnonymizePeople">
+        <rdfs:comment xml:lang="en">Ensures that individuals’ identities cannot be recognized, even using image sensors, to comply with privacy regulations.</rdfs:comment>
+        <rdfs:label xml:lang="es">Evitar en origen la identidad de las personas</rdfs:label>
+        <rdfs:label xml:lang="en">Prevent identification of people at source</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#AverageCO2Levels -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#AverageCO2Levels">
+        <rdfs:comment xml:lang="en">Measures the average carbon dioxide (CO2) levels in ppm. An indicator of air quality and ventilation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Average carbon dioxide levels in ppm</rdfs:label>
+        <rdfs:label xml:lang="es">Niveles de dióxido de carbono medios en ppm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#CO2EvolutionPatterns -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#CO2EvolutionPatterns">
+        <rdfs:comment xml:lang="en">Analyzes how CO2 levels vary throughout the day. Helps optimize ventilation and detect occupancy peaks.</rdfs:comment>
+        <rdfs:label xml:lang="en">CO2 level evolution patterns throughout the day</rdfs:label>
+        <rdfs:label xml:lang="es">Patrones de evolución de los niveles de CO2 a lo largo del día</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#CondensationDetectionCritical -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#CondensationDetectionCritical">
+        <rdfs:comment xml:lang="en">Detects condensation in critical areas (walls, ceilings, sensitive equipment). Helps prevent structural damage or equipment failure.</rdfs:comment>
+        <rdfs:label xml:lang="es">Detección de condensación en áreas críticas</rdfs:label>
+        <rdfs:label xml:lang="en">Detection of condensation in critical areas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#ConsumptionPeaks -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#ConsumptionPeaks">
+        <rdfs:comment xml:lang="en">Identifies moments of maximum energy consumption, useful for demand management and peak reduction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Consumption peaks</rdfs:label>
+        <rdfs:label xml:lang="es">Picos de consumo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#EnergyConsumptionByEquipment -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#EnergyConsumptionByEquipment">
+        <rdfs:comment xml:lang="en">Measures energy consumption per specific equipment, helping detect inefficient or faulty devices.</rdfs:comment>
+        <rdfs:label xml:lang="es">Consumo por equipos</rdfs:label>
+        <rdfs:label xml:lang="en">Energy consumption by equipment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#EnergyConsumptionBySpace -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#EnergyConsumptionBySpace">
+        <rdfs:comment xml:lang="en">Measures energy consumption by zone or space, allowing identification of high-consumption areas and improving efficiency.</rdfs:comment>
+        <rdfs:label xml:lang="es">Consumo por espacios</rdfs:label>
+        <rdfs:label xml:lang="en">Energy consumption by spaces</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#EquipmentTemperatures -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#EquipmentTemperatures">
+        <rdfs:comment xml:lang="en">Records the temperature of specific equipment, such as servers, machinery, or HVAC systems, to prevent overheating and maintain efficiency.</rdfs:comment>
+        <rdfs:label xml:lang="es">Temperaturas de equipos específicos</rdfs:label>
+        <rdfs:label xml:lang="en">Temperatures of specific equipment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#IndoorAmbientTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#IndoorAmbientTemperature">
+        <rdfs:comment xml:lang="en">Measures the air temperature inside a building or space. Useful for controlling thermal comfort and HVAC efficiency.</rdfs:comment>
+        <rdfs:label xml:lang="en">Indoor ambient temperature</rdfs:label>
+        <rdfs:label xml:lang="es">Temperatura ambiental interior</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#IndoorRelativeHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#IndoorRelativeHumidity">
+        <rdfs:comment xml:lang="en">Indicates the relative humidity indoors. Important for human comfort, material preservation, and mold prevention.</rdfs:comment>
+        <rdfs:label xml:lang="es">Humedad relativa del aire interior</rdfs:label>
+        <rdfs:label xml:lang="en">Indoor air relative humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#OccupancyLevel -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#OccupancyLevel">
+        <rdfs:comment xml:lang="en">Indicates the number or percentage of occupants in a space at a given time, useful for resource management and safety.</rdfs:comment>
+        <rdfs:label xml:lang="es">Nivel de ocupación</rdfs:label>
+        <rdfs:label xml:lang="en">Occupancy level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#OccupancyPatterns -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#OccupancyPatterns">
+        <rdfs:comment xml:lang="en">Identifies occupancy patterns over time, useful for scheduling, energy management, and cleaning planning.</rdfs:comment>
+        <rdfs:label xml:lang="es">Identificar patrones de ocupación</rdfs:label>
+        <rdfs:label xml:lang="en">Identify occupancy patterns</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#OutdoorAmbientTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#OutdoorAmbientTemperature">
+        <rdfs:comment xml:lang="en">Measures the air temperature inside a building or space. Useful for controlling thermal comfort and HVAC efficiency.</rdfs:comment>
+        <rdfs:label xml:lang="en">Outdoor ambient temperature</rdfs:label>
+        <rdfs:label xml:lang="es">Temperatura ambiental exterior</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#OutdoorRelativeHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#OutdoorRelativeHumidity">
+        <rdfs:comment xml:lang="en">Indicates the relative humidity of outdoor air, useful for planning ventilation and adjusting HVAC systems according to external conditions.</rdfs:comment>
+        <rdfs:label xml:lang="es">Humedad relativa del aire exterior</rdfs:label>
+        <rdfs:label xml:lang="en">Outdoor air relative humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#PeopleCountImageDetection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#PeopleCountImageDetection">
+        <rdfs:comment xml:lang="en">Detects the number of people present using images, while preserving privacy. Facilitates occupancy management and flow analysis.</rdfs:comment>
+        <rdfs:label xml:lang="es">Detección por imagen del número de personas presentes</rdfs:label>
+        <rdfs:label xml:lang="en">Image-based detection of number of people present</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#PresenceDetection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#PresenceDetection">
+        <rdfs:comment xml:lang="en">Detects whether people are present in an area without counting each individual. Useful for lighting, HVAC, or security control.</rdfs:comment>
+        <rdfs:label xml:lang="es">Detección de presencia</rdfs:label>
+        <rdfs:label xml:lang="en">Presence detection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#RealTimeLeakDetection -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#RealTimeLeakDetection">
+        <rdfs:comment xml:lang="en">Detects water leaks in real time, helping prevent waste and damage.</rdfs:comment>
+        <rdfs:label xml:lang="es">Detección de fugas en tiempo real</rdfs:label>
+        <rdfs:label xml:lang="en">Real-time leak detection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#StandbyOrPhantomPowerDevices -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#StandbyOrPhantomPowerDevices">
+        <rdfs:comment xml:lang="en">Detects devices in standby mode or consuming “phantom” power, to reduce energy waste.</rdfs:comment>
+        <rdfs:label xml:lang="es">Identificación de dispositivos en modo de espera o con consumo fantasma</rdfs:label>
+        <rdfs:label xml:lang="en">Identification of devices in standby or phantom power</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#TemperatureGradientLevels -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#TemperatureGradientLevels">
+        <rdfs:comment xml:lang="en">Measures how temperature changes at different heights or levels within a space (e.g., floor to ceiling). Helps identify air stratification.</rdfs:comment>
+        <rdfs:label xml:lang="es">Gradiente de temperatura en diferentes niveles</rdfs:label>
+        <rdfs:label xml:lang="en">Temperature gradient at different levels</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#ThermalVariationsByZone -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#ThermalVariationsByZone">
+        <rdfs:comment xml:lang="en">Records temperature differences between different zones or rooms in a building. Helps detect thermal imbalances or heating/cooling issues.</rdfs:comment>
+        <rdfs:label xml:lang="en">Thermal variations by zones or rooms</rdfs:label>
+        <rdfs:label xml:lang="es">Variaciones térmicas por zonas o habitaciones</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#TotalEnergyConsumption -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#TotalEnergyConsumption">
+        <rdfs:comment xml:lang="en">Measures the total energy consumption of the building over a period, for monitoring and cost reduction.</rdfs:comment>
+        <rdfs:label xml:lang="es">Consumo energético total del edificio</rdfs:label>
+        <rdfs:label xml:lang="en">PTotal energy consumption of the building</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#TotalWaterUsage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#TotalWaterUsage">
+        <rdfs:comment xml:lang="en">Measures the total volume of water used over a period, useful for consumption control and sustainability.</rdfs:comment>
+        <rdfs:label xml:lang="en">Total water usage</rdfs:label>
+        <rdfs:label xml:lang="es">Volumen total de agua utilizada</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#VentilationDeficiencies -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#VentilationDeficiencies">
+        <rdfs:comment xml:lang="en">Identifies areas or situations with insufficient ventilation, which may affect air quality and occupant health.</rdfs:comment>
+        <rdfs:label xml:lang="es">Identificar deficiencias en la ventilación</rdfs:label>
+        <rdfs:label xml:lang="en">Identify ventilation deficiencies</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#WaterConsumptionByZone -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#WaterConsumptionByZone">
+        <rdfs:comment xml:lang="en">Measures water usage by zone or type of use (bathrooms, kitchens, irrigation), to optimize resources and detect anomalies.</rdfs:comment>
+        <rdfs:label xml:lang="es">Consumo por zonas o tipos de uso</rdfs:label>
+        <rdfs:label xml:lang="en">Water consumption by zones or type of use</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#WaterFlowAnalysisByTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#WaterFlowAnalysisByTime">
+        <rdfs:comment xml:lang="en">Analyzes water flow at different times, allowing identification of consumption peaks or unusual patterns.</rdfs:comment>
+        <rdfs:label xml:lang="en">Analysis of water flow at different times</rdfs:label>
+        <rdfs:label xml:lang="es">Análisis del flujo de agua en diferentes horarios</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/BIMxel#WaterLevelsTanks -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/BIMxel#WaterLevelsTanks">
+        <rdfs:comment xml:lang="en">Measures water levels in tanks or reservoirs, useful for supply management and refill planning.</rdfs:comment>
+        <rdfs:label xml:lang="es">Niveles de agua en tanques o depósitos</rdfs:label>
+        <rdfs:label xml:lang="en">Water levels in tanks or reservoirs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/bimxel#BIMxel_IndoorAmbientTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/bimxel#BIMxel_IndoorAmbientTemperature"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/bot#Element">
+        <rdfs:label>Element</rdfs:label>
+        <rdfs:label>element</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/bot#Space">
+        <rdfs:label>Space</rdfs:label>
+        <rdfs:label>space</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/bot#Zone">
+        <rdfs:label>Zone</rdfs:label>
+        <rdfs:label>zone</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/sosa#Observation">
+        <rdfs:label>Observation</rdfs:label>
+        <rdfs:label>observation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/time#Instant">
+        <rdfs:label>Instant</rdfs:label>
+        <rdfs:label>instant</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/time#Interval">
+        <rdfs:label>Interval</rdfs:label>
+        <rdfs:label>interval</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

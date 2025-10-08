@@ -1,0 +1,722 @@
+[ {
+  "@id" : "http://qudt.org/schema/qudt/hasQuantityKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has quantity kind"
+  } ]
+}, {
+  "@id" : "http://qudt.org/vocab/quantitykind/AmountOfSubstanceConcentration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Amount Of Substance Concentration"
+  } ]
+}, {
+  "@id" : "http://qudt.org/vocab/quantitykind/Energy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Energy"
+  } ]
+}, {
+  "@id" : "http://qudt.org/vocab/quantitykind/MoistureContent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Moisture Content"
+  } ]
+}, {
+  "@id" : "http://qudt.org/vocab/quantitykind/PersonCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Person Count"
+  } ]
+}, {
+  "@id" : "http://qudt.org/vocab/quantitykind/Power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.owl-ontologies.com/sosa#Observation"
+  }, {
+    "@id" : "http://www.owl-ontologies.com/time#Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "power"
+  } ]
+}, {
+  "@id" : "http://qudt.org/vocab/quantitykind/RelativeHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Relative Humidity"
+  } ]
+}, {
+  "@id" : "http://qudt.org/vocab/quantitykind/Temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Temperature"
+  } ]
+}, {
+  "@id" : "http://qudt.org/vocab/quantitykind/Volume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Volume"
+  } ]
+}, {
+  "@id" : "http://qudt.org/vocab/quantitykind/VolumetricFlowRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Volumetric Flow Rate"
+  } ]
+}, {
+  "@id" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ifc Building"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelBuilding"
+  } ]
+}, {
+  "@id" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuildingStorey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ifc Building Storey"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelLevel"
+  } ]
+}, {
+  "@id" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ifc Element"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelElement"
+  } ]
+}, {
+  "@id" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcProject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ifc Project"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelProject"
+  } ]
+}, {
+  "@id" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ifc Site"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelSite"
+  } ]
+}, {
+  "@id" : "http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ifc Space"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelSpace"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#AnonymizePeople",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ensures that individuals’ identities cannot be recognized, even using image sensors, to comply with privacy regulations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Evitar en origen la identidad de las personas"
+  }, {
+    "@language" : "en",
+    "@value" : "Prevent identification of people at source"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#AverageCO2Levels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures the average carbon dioxide (CO2) levels in ppm. An indicator of air quality and ventilation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Average carbon dioxide levels in ppm"
+  }, {
+    "@language" : "es",
+    "@value" : "Niveles de dióxido de carbono medios en ppm"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#CO2EvolutionPatterns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Analyzes how CO2 levels vary throughout the day. Helps optimize ventilation and detect occupancy peaks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CO2 level evolution patterns throughout the day"
+  }, {
+    "@language" : "es",
+    "@value" : "Patrones de evolución de los niveles de CO2 a lo largo del día"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#CondensationDetectionCritical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Detects condensation in critical areas (walls, ceilings, sensitive equipment). Helps prevent structural damage or equipment failure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Detección de condensación en áreas críticas"
+  }, {
+    "@language" : "en",
+    "@value" : "Detection of condensation in critical areas"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#ConsumptionPeaks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies moments of maximum energy consumption, useful for demand management and peak reduction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Consumption peaks"
+  }, {
+    "@language" : "es",
+    "@value" : "Picos de consumo"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#EnergyConsumptionByEquipment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures energy consumption per specific equipment, helping detect inefficient or faulty devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Consumo por equipos"
+  }, {
+    "@language" : "en",
+    "@value" : "Energy consumption by equipment"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#EnergyConsumptionBySpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures energy consumption by zone or space, allowing identification of high-consumption areas and improving efficiency."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Consumo por espacios"
+  }, {
+    "@language" : "en",
+    "@value" : "Energy consumption by spaces"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#EquipmentTemperatures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Records the temperature of specific equipment, such as servers, machinery, or HVAC systems, to prevent overheating and maintain efficiency."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Temperaturas de equipos específicos"
+  }, {
+    "@language" : "en",
+    "@value" : "Temperatures of specific equipment"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#IndoorAmbientTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures the air temperature inside a building or space. Useful for controlling thermal comfort and HVAC efficiency."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Indoor ambient temperature"
+  }, {
+    "@language" : "es",
+    "@value" : "Temperatura ambiental interior"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#IndoorRelativeHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the relative humidity indoors. Important for human comfort, material preservation, and mold prevention."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Humedad relativa del aire interior"
+  }, {
+    "@language" : "en",
+    "@value" : "Indoor air relative humidity"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#OccupancyLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the number or percentage of occupants in a space at a given time, useful for resource management and safety."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Nivel de ocupación"
+  }, {
+    "@language" : "en",
+    "@value" : "Occupancy level"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#OccupancyPatterns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies occupancy patterns over time, useful for scheduling, energy management, and cleaning planning."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Identificar patrones de ocupación"
+  }, {
+    "@language" : "en",
+    "@value" : "Identify occupancy patterns"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#OutdoorAmbientTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures the air temperature inside a building or space. Useful for controlling thermal comfort and HVAC efficiency."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Outdoor ambient temperature"
+  }, {
+    "@language" : "es",
+    "@value" : "Temperatura ambiental exterior"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#OutdoorRelativeHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the relative humidity of outdoor air, useful for planning ventilation and adjusting HVAC systems according to external conditions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Humedad relativa del aire exterior"
+  }, {
+    "@language" : "en",
+    "@value" : "Outdoor air relative humidity"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#PeopleCountImageDetection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Detects the number of people present using images, while preserving privacy. Facilitates occupancy management and flow analysis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Detección por imagen del número de personas presentes"
+  }, {
+    "@language" : "en",
+    "@value" : "Image-based detection of number of people present"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#PresenceDetection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Detects whether people are present in an area without counting each individual. Useful for lighting, HVAC, or security control."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Detección de presencia"
+  }, {
+    "@language" : "en",
+    "@value" : "Presence detection"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#RealTimeLeakDetection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Detects water leaks in real time, helping prevent waste and damage."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Detección de fugas en tiempo real"
+  }, {
+    "@language" : "en",
+    "@value" : "Real-time leak detection"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#StandbyOrPhantomPowerDevices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Detects devices in standby mode or consuming “phantom” power, to reduce energy waste."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Identificación de dispositivos en modo de espera o con consumo fantasma"
+  }, {
+    "@language" : "en",
+    "@value" : "Identification of devices in standby or phantom power"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#TemperatureGradientLevels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures how temperature changes at different heights or levels within a space (e.g., floor to ceiling). Helps identify air stratification."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Gradiente de temperatura en diferentes niveles"
+  }, {
+    "@language" : "en",
+    "@value" : "Temperature gradient at different levels"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#ThermalVariationsByZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Records temperature differences between different zones or rooms in a building. Helps detect thermal imbalances or heating/cooling issues."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Thermal variations by zones or rooms"
+  }, {
+    "@language" : "es",
+    "@value" : "Variaciones térmicas por zonas o habitaciones"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#TotalEnergyConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures the total energy consumption of the building over a period, for monitoring and cost reduction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Consumo energético total del edificio"
+  }, {
+    "@language" : "en",
+    "@value" : "PTotal energy consumption of the building"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#TotalWaterUsage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures the total volume of water used over a period, useful for consumption control and sustainability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Total water usage"
+  }, {
+    "@language" : "es",
+    "@value" : "Volumen total de agua utilizada"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#VentilationDeficiencies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifies areas or situations with insufficient ventilation, which may affect air quality and occupant health."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Identificar deficiencias en la ventilación"
+  }, {
+    "@language" : "en",
+    "@value" : "Identify ventilation deficiencies"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#WaterConsumptionByZone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures water usage by zone or type of use (bathrooms, kitchens, irrigation), to optimize resources and detect anomalies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Consumo por zonas o tipos de uso"
+  }, {
+    "@language" : "en",
+    "@value" : "Water consumption by zones or type of use"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#WaterFlowAnalysisByTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Analyzes water flow at different times, allowing identification of consumption peaks or unusual patterns."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Analysis of water flow at different times"
+  }, {
+    "@language" : "es",
+    "@value" : "Análisis del flujo de agua en diferentes horarios"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/BIMxel#WaterLevelsTanks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Measures water levels in tanks or reservoirs, useful for supply management and refill planning."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Niveles de agua en tanques o depósitos"
+  }, {
+    "@language" : "en",
+    "@value" : "Water levels in tanks or reservoirs"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bimxel#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://qudt.org/3.1.5/vocab/quantitykind"
+  }, {
+    "@id" : "https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.0.1"
+  } ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bimxel#BIMxel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B I Mxel"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelBuilding",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B I Mxel Building"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B I Mxel Element"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B I Mxel Level"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelProject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B I Mxel Project"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelSite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B I Mxel Site"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B I Mxel Space"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bimxel#BIMxel_IndoorAmbientTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bimxel#HasProject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.owl-ontologies.com/bimxel#BIMxel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.owl-ontologies.com/bimxel#BIMxelProject"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bimxel#IsContainedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Is Contained In."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.owl-ontologies.com/bimxel#BIMxel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is contained in"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bot#Element",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.owl-ontologies.com/sosa#Observation"
+  }, {
+    "@id" : "http://www.owl-ontologies.com/time#Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Element"
+  }, {
+    "@value" : "element"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bot#Space",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.owl-ontologies.com/sosa#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Space"
+  }, {
+    "@value" : "space"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/bot#Zone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.owl-ontologies.com/bot#Element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Zone"
+  }, {
+    "@value" : "zone"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/geo#Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/quantityKind#AmountOfSubstanceConcentration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Amount Of Substance Concentration"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/quantityKind#Density",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Density"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/quantityKind#PersonCount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Person Count"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/quantityKind#VolumetricFlowRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Volumetric Flow Rate"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/sosa#Actuation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Actuation"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/sosa#FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature Of Interest"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/sosa#Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.owl-ontologies.com/bot#Element"
+  }, {
+    "@id" : "http://www.owl-ontologies.com/bot#Space"
+  }, {
+    "@id" : "http://www.owl-ontologies.com/bot#Zone"
+  }, {
+    "@id" : "http://www.owl-ontologies.com/time#Instant"
+  }, {
+    "@id" : "http://www.owl-ontologies.com/time#Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Observation"
+  }, {
+    "@value" : "observation"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/sosa#Procedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Procedure"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/time#Instant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.owl-ontologies.com/bot#Element"
+  }, {
+    "@id" : "http://www.owl-ontologies.com/sosa#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Instant"
+  }, {
+    "@value" : "instant"
+  } ]
+}, {
+  "@id" : "http://www.owl-ontologies.com/time#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.owl-ontologies.com/bot#Space"
+  }, {
+    "@id" : "http://www.owl-ontologies.com/bot#Zone"
+  }, {
+    "@id" : "http://www.owl-ontologies.com/sosa#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Interval"
+  }, {
+    "@value" : "interval"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "comment"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "label"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "broader"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mod#createdWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

@@ -1,0 +1,449 @@
+<http://www.owl-ontologies.com/bimxel#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.owl-ontologies.com/bimxel#> <http://www.w3.org/2002/07/owl#imports> <https://qudt.org/3.1.5/vocab/quantitykind> .
+<http://www.owl-ontologies.com/bimxel#> <http://www.w3.org/2002/07/owl#imports> <https://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL> .
+<http://www.owl-ontologies.com/bimxel#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<http://www.owl-ontologies.com/bimxel#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/2000/01/rdf-schema#label> "comment" .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#label> "label" .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/schema/qudt/hasQuantityKind
+<http://qudt.org/schema/qudt/hasQuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://qudt.org/schema/qudt/hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "has quantity kind" .
+# 
+# http://www.owl-ontologies.com/bimxel#HasProject
+<http://www.owl-ontologies.com/bimxel#HasProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/bimxel#HasProject> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/bimxel#BIMxel> .
+<http://www.owl-ontologies.com/bimxel#HasProject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.owl-ontologies.com/bimxel#BIMxelProject> .
+<http://www.owl-ontologies.com/bimxel#HasProject> <http://www.w3.org/2000/01/rdf-schema#label> "has project" .
+# 
+# http://www.owl-ontologies.com/bimxel#IsContainedIn
+<http://www.owl-ontologies.com/bimxel#IsContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/bimxel#IsContainedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/bimxel#BIMxel> .
+<http://www.owl-ontologies.com/bimxel#IsContainedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Is Contained In."@en .
+<http://www.owl-ontologies.com/bimxel#IsContainedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is contained in" .
+# 
+# http://www.w3.org/2004/02/skos/core#broader
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#broader> <http://www.w3.org/2000/01/rdf-schema#label> "broader" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/vocab/quantitykind/Power
+<http://qudt.org/vocab/quantitykind/Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://qudt.org/vocab/quantitykind/Power> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/sosa#Observation> .
+<http://qudt.org/vocab/quantitykind/Power> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/time#Interval> .
+<http://qudt.org/vocab/quantitykind/Power> <http://www.w3.org/2000/01/rdf-schema#label> "power" .
+# 
+# http://www.owl-ontologies.com/bot#Element
+<http://www.owl-ontologies.com/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/bot#Element> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/sosa#Observation> .
+<http://www.owl-ontologies.com/bot#Element> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/time#Interval> .
+# 
+# http://www.owl-ontologies.com/bot#Space
+<http://www.owl-ontologies.com/bot#Space> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/bot#Space> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/sosa#Observation> .
+# 
+# http://www.owl-ontologies.com/bot#Zone
+<http://www.owl-ontologies.com/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/bot#Zone> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/bot#Element> .
+# 
+# http://www.owl-ontologies.com/sosa#Observation
+<http://www.owl-ontologies.com/sosa#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/sosa#Observation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/bot#Element> .
+<http://www.owl-ontologies.com/sosa#Observation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/bot#Space> .
+<http://www.owl-ontologies.com/sosa#Observation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/bot#Zone> .
+<http://www.owl-ontologies.com/sosa#Observation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/time#Instant> .
+<http://www.owl-ontologies.com/sosa#Observation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/time#Interval> .
+# 
+# http://www.owl-ontologies.com/time#Instant
+<http://www.owl-ontologies.com/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/time#Instant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/bot#Element> .
+<http://www.owl-ontologies.com/time#Instant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/sosa#Observation> .
+# 
+# http://www.owl-ontologies.com/time#Interval
+<http://www.owl-ontologies.com/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.owl-ontologies.com/time#Interval> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/bot#Space> .
+<http://www.owl-ontologies.com/time#Interval> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/bot#Zone> .
+<http://www.owl-ontologies.com/time#Interval> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.owl-ontologies.com/sosa#Observation> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/vocab/quantitykind/AmountOfSubstanceConcentration
+<http://qudt.org/vocab/quantitykind/AmountOfSubstanceConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/vocab/quantitykind/AmountOfSubstanceConcentration> <http://www.w3.org/2000/01/rdf-schema#label> "Amount Of Substance Concentration" .
+# 
+# http://qudt.org/vocab/quantitykind/Energy
+<http://qudt.org/vocab/quantitykind/Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/vocab/quantitykind/Energy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy" .
+# 
+# http://qudt.org/vocab/quantitykind/MoistureContent
+<http://qudt.org/vocab/quantitykind/MoistureContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/vocab/quantitykind/MoistureContent> <http://www.w3.org/2000/01/rdf-schema#label> "Moisture Content" .
+# 
+# http://qudt.org/vocab/quantitykind/PersonCount
+<http://qudt.org/vocab/quantitykind/PersonCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/vocab/quantitykind/PersonCount> <http://www.w3.org/2000/01/rdf-schema#label> "Person Count" .
+# 
+# http://qudt.org/vocab/quantitykind/RelativeHumidity
+<http://qudt.org/vocab/quantitykind/RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/vocab/quantitykind/RelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Relative Humidity" .
+# 
+# http://qudt.org/vocab/quantitykind/Temperature
+<http://qudt.org/vocab/quantitykind/Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/vocab/quantitykind/Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature" .
+# 
+# http://qudt.org/vocab/quantitykind/Volume
+<http://qudt.org/vocab/quantitykind/Volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/vocab/quantitykind/Volume> <http://www.w3.org/2000/01/rdf-schema#label> "Volume" .
+# 
+# http://qudt.org/vocab/quantitykind/VolumetricFlowRate
+<http://qudt.org/vocab/quantitykind/VolumetricFlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qudt.org/vocab/quantitykind/VolumetricFlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "Volumetric Flow Rate" .
+# 
+# http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuilding
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuilding> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.owl-ontologies.com/bimxel#BIMxelBuilding> .
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Ifc Building" .
+# 
+# http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuildingStorey
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuildingStorey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuildingStorey> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.owl-ontologies.com/bimxel#BIMxelLevel> .
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcBuildingStorey> <http://www.w3.org/2000/01/rdf-schema#label> "Ifc Building Storey" .
+# 
+# http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcElement
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcElement> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.owl-ontologies.com/bimxel#BIMxelElement> .
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcElement> <http://www.w3.org/2000/01/rdf-schema#label> "Ifc Element" .
+# 
+# http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcProject
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcProject> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.owl-ontologies.com/bimxel#BIMxelProject> .
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcProject> <http://www.w3.org/2000/01/rdf-schema#label> "Ifc Project" .
+# 
+# http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSite
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSite> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.owl-ontologies.com/bimxel#BIMxelSite> .
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSite> <http://www.w3.org/2000/01/rdf-schema#label> "Ifc Site" .
+# 
+# http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSpace
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSpace> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.owl-ontologies.com/bimxel#BIMxelSpace> .
+<http://standards.buildingsmart.org/IFC/DEV/IFC4_1/OWL#IfcSpace> <http://www.w3.org/2000/01/rdf-schema#label> "Ifc Space" .
+# 
+# http://www.owl-ontologies.com/bimxel#BIMxel
+<http://www.owl-ontologies.com/bimxel#BIMxel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/bimxel#BIMxel> <http://www.w3.org/2000/01/rdf-schema#label> "B I Mxel" .
+# 
+# http://www.owl-ontologies.com/bimxel#BIMxelBuilding
+<http://www.owl-ontologies.com/bimxel#BIMxelBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/bimxel#BIMxelBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "B I Mxel Building" .
+# 
+# http://www.owl-ontologies.com/bimxel#BIMxelElement
+<http://www.owl-ontologies.com/bimxel#BIMxelElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/bimxel#BIMxelElement> <http://www.w3.org/2000/01/rdf-schema#label> "B I Mxel Element" .
+# 
+# http://www.owl-ontologies.com/bimxel#BIMxelLevel
+<http://www.owl-ontologies.com/bimxel#BIMxelLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/bimxel#BIMxelLevel> <http://www.w3.org/2000/01/rdf-schema#label> "B I Mxel Level" .
+# 
+# http://www.owl-ontologies.com/bimxel#BIMxelProject
+<http://www.owl-ontologies.com/bimxel#BIMxelProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/bimxel#BIMxelProject> <http://www.w3.org/2000/01/rdf-schema#label> "B I Mxel Project" .
+# 
+# http://www.owl-ontologies.com/bimxel#BIMxelSite
+<http://www.owl-ontologies.com/bimxel#BIMxelSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/bimxel#BIMxelSite> <http://www.w3.org/2000/01/rdf-schema#label> "B I Mxel Site" .
+# 
+# http://www.owl-ontologies.com/bimxel#BIMxelSpace
+<http://www.owl-ontologies.com/bimxel#BIMxelSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/bimxel#BIMxelSpace> <http://www.w3.org/2000/01/rdf-schema#label> "B I Mxel Space" .
+# 
+# http://www.owl-ontologies.com/bot#Element
+<http://www.owl-ontologies.com/bot#Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/bot#Space
+<http://www.owl-ontologies.com/bot#Space> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/bot#Zone
+<http://www.owl-ontologies.com/bot#Zone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/geo#Feature
+<http://www.owl-ontologies.com/geo#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/geo#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature" .
+# 
+# http://www.owl-ontologies.com/quantityKind#AmountOfSubstanceConcentration
+<http://www.owl-ontologies.com/quantityKind#AmountOfSubstanceConcentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/quantityKind#AmountOfSubstanceConcentration> <http://www.w3.org/2000/01/rdf-schema#label> "Amount Of Substance Concentration" .
+# 
+# http://www.owl-ontologies.com/quantityKind#Density
+<http://www.owl-ontologies.com/quantityKind#Density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/quantityKind#Density> <http://www.w3.org/2000/01/rdf-schema#label> "Density" .
+# 
+# http://www.owl-ontologies.com/quantityKind#PersonCount
+<http://www.owl-ontologies.com/quantityKind#PersonCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/quantityKind#PersonCount> <http://www.w3.org/2000/01/rdf-schema#label> "Person Count" .
+# 
+# http://www.owl-ontologies.com/quantityKind#VolumetricFlowRate
+<http://www.owl-ontologies.com/quantityKind#VolumetricFlowRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/quantityKind#VolumetricFlowRate> <http://www.w3.org/2000/01/rdf-schema#label> "Volumetric Flow Rate" .
+# 
+# http://www.owl-ontologies.com/sosa#Actuation
+<http://www.owl-ontologies.com/sosa#Actuation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/sosa#Actuation> <http://www.w3.org/2000/01/rdf-schema#label> "Actuation" .
+# 
+# http://www.owl-ontologies.com/sosa#FeatureOfInterest
+<http://www.owl-ontologies.com/sosa#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/sosa#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature Of Interest" .
+# 
+# http://www.owl-ontologies.com/sosa#Observation
+<http://www.owl-ontologies.com/sosa#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/sosa#Procedure
+<http://www.owl-ontologies.com/sosa#Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.owl-ontologies.com/sosa#Procedure> <http://www.w3.org/2000/01/rdf-schema#label> "Procedure" .
+# 
+# http://www.owl-ontologies.com/time#Instant
+<http://www.owl-ontologies.com/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/time#Interval
+<http://www.owl-ontologies.com/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.owl-ontologies.com/BIMxel#AnonymizePeople
+<http://www.owl-ontologies.com/BIMxel#AnonymizePeople> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#AnonymizePeople> <http://www.w3.org/2000/01/rdf-schema#comment> "Ensures that individuals’ identities cannot be recognized, even using image sensors, to comply with privacy regulations."@en .
+<http://www.owl-ontologies.com/BIMxel#AnonymizePeople> <http://www.w3.org/2000/01/rdf-schema#label> "Evitar en origen la identidad de las personas"@es .
+<http://www.owl-ontologies.com/BIMxel#AnonymizePeople> <http://www.w3.org/2000/01/rdf-schema#label> "Prevent identification of people at source"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#AverageCO2Levels
+<http://www.owl-ontologies.com/BIMxel#AverageCO2Levels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#AverageCO2Levels> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures the average carbon dioxide (CO2) levels in ppm. An indicator of air quality and ventilation."@en .
+<http://www.owl-ontologies.com/BIMxel#AverageCO2Levels> <http://www.w3.org/2000/01/rdf-schema#label> "Average carbon dioxide levels in ppm"@en .
+<http://www.owl-ontologies.com/BIMxel#AverageCO2Levels> <http://www.w3.org/2000/01/rdf-schema#label> "Niveles de dióxido de carbono medios en ppm"@es .
+# 
+# http://www.owl-ontologies.com/BIMxel#CO2EvolutionPatterns
+<http://www.owl-ontologies.com/BIMxel#CO2EvolutionPatterns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#CO2EvolutionPatterns> <http://www.w3.org/2000/01/rdf-schema#comment> "Analyzes how CO2 levels vary throughout the day. Helps optimize ventilation and detect occupancy peaks."@en .
+<http://www.owl-ontologies.com/BIMxel#CO2EvolutionPatterns> <http://www.w3.org/2000/01/rdf-schema#label> "CO2 level evolution patterns throughout the day"@en .
+<http://www.owl-ontologies.com/BIMxel#CO2EvolutionPatterns> <http://www.w3.org/2000/01/rdf-schema#label> "Patrones de evolución de los niveles de CO2 a lo largo del día"@es .
+# 
+# http://www.owl-ontologies.com/BIMxel#CondensationDetectionCritical
+<http://www.owl-ontologies.com/BIMxel#CondensationDetectionCritical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#CondensationDetectionCritical> <http://www.w3.org/2000/01/rdf-schema#comment> "Detects condensation in critical areas (walls, ceilings, sensitive equipment). Helps prevent structural damage or equipment failure."@en .
+<http://www.owl-ontologies.com/BIMxel#CondensationDetectionCritical> <http://www.w3.org/2000/01/rdf-schema#label> "Detección de condensación en áreas críticas"@es .
+<http://www.owl-ontologies.com/BIMxel#CondensationDetectionCritical> <http://www.w3.org/2000/01/rdf-schema#label> "Detection of condensation in critical areas"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#ConsumptionPeaks
+<http://www.owl-ontologies.com/BIMxel#ConsumptionPeaks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#ConsumptionPeaks> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies moments of maximum energy consumption, useful for demand management and peak reduction."@en .
+<http://www.owl-ontologies.com/BIMxel#ConsumptionPeaks> <http://www.w3.org/2000/01/rdf-schema#label> "Consumption peaks"@en .
+<http://www.owl-ontologies.com/BIMxel#ConsumptionPeaks> <http://www.w3.org/2000/01/rdf-schema#label> "Picos de consumo"@es .
+# 
+# http://www.owl-ontologies.com/BIMxel#EnergyConsumptionByEquipment
+<http://www.owl-ontologies.com/BIMxel#EnergyConsumptionByEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#EnergyConsumptionByEquipment> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures energy consumption per specific equipment, helping detect inefficient or faulty devices."@en .
+<http://www.owl-ontologies.com/BIMxel#EnergyConsumptionByEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "Consumo por equipos"@es .
+<http://www.owl-ontologies.com/BIMxel#EnergyConsumptionByEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "Energy consumption by equipment"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#EnergyConsumptionBySpace
+<http://www.owl-ontologies.com/BIMxel#EnergyConsumptionBySpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#EnergyConsumptionBySpace> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures energy consumption by zone or space, allowing identification of high-consumption areas and improving efficiency."@en .
+<http://www.owl-ontologies.com/BIMxel#EnergyConsumptionBySpace> <http://www.w3.org/2000/01/rdf-schema#label> "Consumo por espacios"@es .
+<http://www.owl-ontologies.com/BIMxel#EnergyConsumptionBySpace> <http://www.w3.org/2000/01/rdf-schema#label> "Energy consumption by spaces"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#EquipmentTemperatures
+<http://www.owl-ontologies.com/BIMxel#EquipmentTemperatures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#EquipmentTemperatures> <http://www.w3.org/2000/01/rdf-schema#comment> "Records the temperature of specific equipment, such as servers, machinery, or HVAC systems, to prevent overheating and maintain efficiency."@en .
+<http://www.owl-ontologies.com/BIMxel#EquipmentTemperatures> <http://www.w3.org/2000/01/rdf-schema#label> "Temperaturas de equipos específicos"@es .
+<http://www.owl-ontologies.com/BIMxel#EquipmentTemperatures> <http://www.w3.org/2000/01/rdf-schema#label> "Temperatures of specific equipment"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#IndoorAmbientTemperature
+<http://www.owl-ontologies.com/BIMxel#IndoorAmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#IndoorAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures the air temperature inside a building or space. Useful for controlling thermal comfort and HVAC efficiency."@en .
+<http://www.owl-ontologies.com/BIMxel#IndoorAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor ambient temperature"@en .
+<http://www.owl-ontologies.com/BIMxel#IndoorAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperatura ambiental interior"@es .
+# 
+# http://www.owl-ontologies.com/BIMxel#IndoorRelativeHumidity
+<http://www.owl-ontologies.com/BIMxel#IndoorRelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#IndoorRelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relative humidity indoors. Important for human comfort, material preservation, and mold prevention."@en .
+<http://www.owl-ontologies.com/BIMxel#IndoorRelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Humedad relativa del aire interior"@es .
+<http://www.owl-ontologies.com/BIMxel#IndoorRelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor air relative humidity"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#OccupancyLevel
+<http://www.owl-ontologies.com/BIMxel#OccupancyLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#OccupancyLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the number or percentage of occupants in a space at a given time, useful for resource management and safety."@en .
+<http://www.owl-ontologies.com/BIMxel#OccupancyLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Nivel de ocupación"@es .
+<http://www.owl-ontologies.com/BIMxel#OccupancyLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Occupancy level"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#OccupancyPatterns
+<http://www.owl-ontologies.com/BIMxel#OccupancyPatterns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#OccupancyPatterns> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies occupancy patterns over time, useful for scheduling, energy management, and cleaning planning."@en .
+<http://www.owl-ontologies.com/BIMxel#OccupancyPatterns> <http://www.w3.org/2000/01/rdf-schema#label> "Identificar patrones de ocupación"@es .
+<http://www.owl-ontologies.com/BIMxel#OccupancyPatterns> <http://www.w3.org/2000/01/rdf-schema#label> "Identify occupancy patterns"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#OutdoorAmbientTemperature
+<http://www.owl-ontologies.com/BIMxel#OutdoorAmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#OutdoorAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures the air temperature inside a building or space. Useful for controlling thermal comfort and HVAC efficiency."@en .
+<http://www.owl-ontologies.com/BIMxel#OutdoorAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Outdoor ambient temperature"@en .
+<http://www.owl-ontologies.com/BIMxel#OutdoorAmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperatura ambiental exterior"@es .
+# 
+# http://www.owl-ontologies.com/BIMxel#OutdoorRelativeHumidity
+<http://www.owl-ontologies.com/BIMxel#OutdoorRelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#OutdoorRelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the relative humidity of outdoor air, useful for planning ventilation and adjusting HVAC systems according to external conditions."@en .
+<http://www.owl-ontologies.com/BIMxel#OutdoorRelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Humedad relativa del aire exterior"@es .
+<http://www.owl-ontologies.com/BIMxel#OutdoorRelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Outdoor air relative humidity"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#PeopleCountImageDetection
+<http://www.owl-ontologies.com/BIMxel#PeopleCountImageDetection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#PeopleCountImageDetection> <http://www.w3.org/2000/01/rdf-schema#comment> "Detects the number of people present using images, while preserving privacy. Facilitates occupancy management and flow analysis."@en .
+<http://www.owl-ontologies.com/BIMxel#PeopleCountImageDetection> <http://www.w3.org/2000/01/rdf-schema#label> "Detección por imagen del número de personas presentes"@es .
+<http://www.owl-ontologies.com/BIMxel#PeopleCountImageDetection> <http://www.w3.org/2000/01/rdf-schema#label> "Image-based detection of number of people present"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#PresenceDetection
+<http://www.owl-ontologies.com/BIMxel#PresenceDetection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#PresenceDetection> <http://www.w3.org/2000/01/rdf-schema#comment> "Detects whether people are present in an area without counting each individual. Useful for lighting, HVAC, or security control."@en .
+<http://www.owl-ontologies.com/BIMxel#PresenceDetection> <http://www.w3.org/2000/01/rdf-schema#label> "Detección de presencia"@es .
+<http://www.owl-ontologies.com/BIMxel#PresenceDetection> <http://www.w3.org/2000/01/rdf-schema#label> "Presence detection"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#RealTimeLeakDetection
+<http://www.owl-ontologies.com/BIMxel#RealTimeLeakDetection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#RealTimeLeakDetection> <http://www.w3.org/2000/01/rdf-schema#comment> "Detects water leaks in real time, helping prevent waste and damage."@en .
+<http://www.owl-ontologies.com/BIMxel#RealTimeLeakDetection> <http://www.w3.org/2000/01/rdf-schema#label> "Detección de fugas en tiempo real"@es .
+<http://www.owl-ontologies.com/BIMxel#RealTimeLeakDetection> <http://www.w3.org/2000/01/rdf-schema#label> "Real-time leak detection"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#StandbyOrPhantomPowerDevices
+<http://www.owl-ontologies.com/BIMxel#StandbyOrPhantomPowerDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#StandbyOrPhantomPowerDevices> <http://www.w3.org/2000/01/rdf-schema#comment> "Detects devices in standby mode or consuming “phantom” power, to reduce energy waste."@en .
+<http://www.owl-ontologies.com/BIMxel#StandbyOrPhantomPowerDevices> <http://www.w3.org/2000/01/rdf-schema#label> "Identificación de dispositivos en modo de espera o con consumo fantasma"@es .
+<http://www.owl-ontologies.com/BIMxel#StandbyOrPhantomPowerDevices> <http://www.w3.org/2000/01/rdf-schema#label> "Identification of devices in standby or phantom power"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#TemperatureGradientLevels
+<http://www.owl-ontologies.com/BIMxel#TemperatureGradientLevels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#TemperatureGradientLevels> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures how temperature changes at different heights or levels within a space (e.g., floor to ceiling). Helps identify air stratification."@en .
+<http://www.owl-ontologies.com/BIMxel#TemperatureGradientLevels> <http://www.w3.org/2000/01/rdf-schema#label> "Gradiente de temperatura en diferentes niveles"@es .
+<http://www.owl-ontologies.com/BIMxel#TemperatureGradientLevels> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature gradient at different levels"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#ThermalVariationsByZone
+<http://www.owl-ontologies.com/BIMxel#ThermalVariationsByZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#ThermalVariationsByZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Records temperature differences between different zones or rooms in a building. Helps detect thermal imbalances or heating/cooling issues."@en .
+<http://www.owl-ontologies.com/BIMxel#ThermalVariationsByZone> <http://www.w3.org/2000/01/rdf-schema#label> "Thermal variations by zones or rooms"@en .
+<http://www.owl-ontologies.com/BIMxel#ThermalVariationsByZone> <http://www.w3.org/2000/01/rdf-schema#label> "Variaciones térmicas por zonas o habitaciones"@es .
+# 
+# http://www.owl-ontologies.com/BIMxel#TotalEnergyConsumption
+<http://www.owl-ontologies.com/BIMxel#TotalEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#TotalEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures the total energy consumption of the building over a period, for monitoring and cost reduction."@en .
+<http://www.owl-ontologies.com/BIMxel#TotalEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Consumo energético total del edificio"@es .
+<http://www.owl-ontologies.com/BIMxel#TotalEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "PTotal energy consumption of the building"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#TotalWaterUsage
+<http://www.owl-ontologies.com/BIMxel#TotalWaterUsage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#TotalWaterUsage> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures the total volume of water used over a period, useful for consumption control and sustainability."@en .
+<http://www.owl-ontologies.com/BIMxel#TotalWaterUsage> <http://www.w3.org/2000/01/rdf-schema#label> "Total water usage"@en .
+<http://www.owl-ontologies.com/BIMxel#TotalWaterUsage> <http://www.w3.org/2000/01/rdf-schema#label> "Volumen total de agua utilizada"@es .
+# 
+# http://www.owl-ontologies.com/BIMxel#VentilationDeficiencies
+<http://www.owl-ontologies.com/BIMxel#VentilationDeficiencies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#VentilationDeficiencies> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifies areas or situations with insufficient ventilation, which may affect air quality and occupant health."@en .
+<http://www.owl-ontologies.com/BIMxel#VentilationDeficiencies> <http://www.w3.org/2000/01/rdf-schema#label> "Identificar deficiencias en la ventilación"@es .
+<http://www.owl-ontologies.com/BIMxel#VentilationDeficiencies> <http://www.w3.org/2000/01/rdf-schema#label> "Identify ventilation deficiencies"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#WaterConsumptionByZone
+<http://www.owl-ontologies.com/BIMxel#WaterConsumptionByZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#WaterConsumptionByZone> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures water usage by zone or type of use (bathrooms, kitchens, irrigation), to optimize resources and detect anomalies."@en .
+<http://www.owl-ontologies.com/BIMxel#WaterConsumptionByZone> <http://www.w3.org/2000/01/rdf-schema#label> "Consumo por zonas o tipos de uso"@es .
+<http://www.owl-ontologies.com/BIMxel#WaterConsumptionByZone> <http://www.w3.org/2000/01/rdf-schema#label> "Water consumption by zones or type of use"@en .
+# 
+# http://www.owl-ontologies.com/BIMxel#WaterFlowAnalysisByTime
+<http://www.owl-ontologies.com/BIMxel#WaterFlowAnalysisByTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#WaterFlowAnalysisByTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Analyzes water flow at different times, allowing identification of consumption peaks or unusual patterns."@en .
+<http://www.owl-ontologies.com/BIMxel#WaterFlowAnalysisByTime> <http://www.w3.org/2000/01/rdf-schema#label> "Analysis of water flow at different times"@en .
+<http://www.owl-ontologies.com/BIMxel#WaterFlowAnalysisByTime> <http://www.w3.org/2000/01/rdf-schema#label> "Análisis del flujo de agua en diferentes horarios"@es .
+# 
+# http://www.owl-ontologies.com/BIMxel#WaterLevelsTanks
+<http://www.owl-ontologies.com/BIMxel#WaterLevelsTanks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.owl-ontologies.com/BIMxel#WaterLevelsTanks> <http://www.w3.org/2000/01/rdf-schema#comment> "Measures water levels in tanks or reservoirs, useful for supply management and refill planning."@en .
+<http://www.owl-ontologies.com/BIMxel#WaterLevelsTanks> <http://www.w3.org/2000/01/rdf-schema#label> "Niveles de agua en tanques o depósitos"@es .
+<http://www.owl-ontologies.com/BIMxel#WaterLevelsTanks> <http://www.w3.org/2000/01/rdf-schema#label> "Water levels in tanks or reservoirs"@en .
+# 
+# http://www.owl-ontologies.com/bimxel#BIMxel_IndoorAmbientTemperature
+<http://www.owl-ontologies.com/bimxel#BIMxel_IndoorAmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.owl-ontologies.com/bot#Element> <http://www.w3.org/2000/01/rdf-schema#label> "Element" .
+<http://www.owl-ontologies.com/bot#Element> <http://www.w3.org/2000/01/rdf-schema#label> "element" .
+# 
+<http://www.owl-ontologies.com/bot#Space> <http://www.w3.org/2000/01/rdf-schema#label> "Space" .
+<http://www.owl-ontologies.com/bot#Space> <http://www.w3.org/2000/01/rdf-schema#label> "space" .
+# 
+<http://www.owl-ontologies.com/bot#Zone> <http://www.w3.org/2000/01/rdf-schema#label> "Zone" .
+<http://www.owl-ontologies.com/bot#Zone> <http://www.w3.org/2000/01/rdf-schema#label> "zone" .
+# 
+<http://www.owl-ontologies.com/sosa#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation" .
+<http://www.owl-ontologies.com/sosa#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "observation" .
+# 
+<http://www.owl-ontologies.com/time#Instant> <http://www.w3.org/2000/01/rdf-schema#label> "Instant" .
+<http://www.owl-ontologies.com/time#Instant> <http://www.w3.org/2000/01/rdf-schema#label> "instant" .
+# 
+<http://www.owl-ontologies.com/time#Interval> <http://www.w3.org/2000/01/rdf-schema#label> "Interval" .
+<http://www.owl-ontologies.com/time#Interval> <http://www.w3.org/2000/01/rdf-schema#label> "interval" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
